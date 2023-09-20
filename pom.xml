@@ -11,8 +11,12 @@
 	<groupId>com.example</groupId>
 	<artifactId>spring-boot-auto</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<packaging>pom</packaging>
 	<name>spring-boot-auto</name>
 	<description>spring-boot-auto</description>
+	<modules>
+		<module>mybaitis-spring-boot-starter</module>
+	</modules>
 	<properties>
 		<java.version>8</java.version>
 	</properties>
@@ -31,6 +35,12 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.example</groupId>
+			<artifactId>mybaitis-spring-boot-starter</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+			<scope>compile</scope>
 		</dependency>
 	</dependencies>
 
